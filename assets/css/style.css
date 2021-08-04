@@ -1,0 +1,121 @@
+@font-face {
+    font-family: karla;
+    src: url(../fonts/Karla-VariableFont_wght.ttf);
+    font-weight: 100 900
+}
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* CSS GENERAL */
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'karla';
+    color: #323A45
+}
+h1{
+    font-size: 1.2rem;
+}
+h3{
+    font-size: 0.8rem;
+    color: #323A45
+}
+p{
+    font-size: .8rem;
+    font-weight: 200;
+    color: #848484;
+    padding: 5px 0%;
+}
+/* HEADER Section*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    padding-bottom: 0%;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li:nth-of-type(1),li:nth-of-type(2){
+    padding-right: 5vw;
+}
+a{
+    text-decoration: none;
+    color:#323A45;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* MAIN Section */
+.main{
+    padding: 2% 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1% 5%;
+}
+.main img{
+    width: 100%;
+    padding: 10px 0;
+}
+.wideRow img{
+    width: 100%;
+}
+figcaption div{
+    display: flex;
+    justify-content: space-between;
+}
+.wideRow{
+    grid-column: 1/4;
+    grid-row:1/2;
+}
+.shortRow1 {
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+.shortRow2 {
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+.shortRow3 {
+    grid-column: 3/4;
+    grid-row:2/3;
+}
+.shortRow4 {
+    grid-column: 1/2;
+    grid-row:3/4;
+}
+.shortRow5 {
+    grid-column: 2/3;
+    grid-row:3/4;
+}
+.shortRow6 {
+    grid-column: 3/4;
+    grid-row:3/4;
+}
+/* CONTACT Section*/
+.final{
+    margin-top: 50px;
+    display: flex;
+    padding: 0 5%;
+    padding-bottom: 2%;
+}
+.final article{
+    margin-right: 3%;
+}
+.final article ul{
+    display: flex;
+    flex-direction: column;
+}
+.final h4{
+    margin-bottom: 30px;
+}
+/* FOOTER Section*/
+footer{
+    padding: 1% 5%;
+    font-size: .8rem;
+    color: #848484
+}
