@@ -8,6 +8,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* CSS GENERAL */
 html{
     font-size: 100%;
@@ -20,11 +23,11 @@ h1{
     font-size: 1.2rem;
 }
 h3{
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #323A45
 }
 p{
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 200;
     color: #848484;
     padding: 5px 0%;
@@ -97,25 +100,41 @@ figcaption div{
     grid-row:3/4;
 }
 /* CONTACT Section*/
-.final{
+#final{
     margin-top: 50px;
     display: flex;
     padding: 0 5%;
     padding-bottom: 2%;
 }
-.final article{
+#final article{
     margin-right: 3%;
 }
-.final article ul{
+#final article ul{
     display: flex;
     flex-direction: column;
 }
-.final h4{
+#final article ul li{
+    font-weight: 200;
+    padding-bottom: 8px;
+}
+#final h4{
     margin-bottom: 30px;
+}
+#founder{
+    font-weight: 500;
+}
+#subs{
+    font-weight: 800;
 }
 /* FOOTER Section*/
 footer{
     padding: 1% 5%;
     font-size: .8rem;
     color: #848484
+}
+
+@media screen and (max-width:600px){
+    .main{
+        grid-template-columns: 1fr;
+    }
 }
